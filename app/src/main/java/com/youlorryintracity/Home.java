@@ -819,6 +819,7 @@ public class Home extends AppCompatActivity
                     MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(Destination);
                     markerOptions.title("Drop");
+
                     markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
                     DropMarker = mMap.addMarker(markerOptions);
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(Destination));
