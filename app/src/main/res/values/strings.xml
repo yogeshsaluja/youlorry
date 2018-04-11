@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">YOULORRY</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="enter_no">Enter your mobile number</string>
+    <string name="phone_hint">Enter your mobile number</string>
+    <string name="get_moving">Get moving with Uber</string>
+    <string name="transition_arrow">transition_arrow</string>
+    <string name="transition_tvMoving">transition_tvMoving</string>
+    <string name="transition_ivFlag">transition_ivFlag</string>
+    <string name="transition_tvCode">transition_tvCode</string>
+    <string name="transition_tvPhoneNo">transition_tvPhoneNo</string>
+    <string name="transition_llPhone">transition_llPhone</string>
+    <string name="welcome_back">Welcome, verify OTP to continue</string>
+    <string name="Rs">\u20B9</string>
+    <string name="google_directions_key">AIzaSyA1Gt_AMDo1n9RwsutoKkZrLbGnhIujLLE</string>
+    <array name="truckslist">
+        <item>Select Truck</item>
+        <item>Truck</item>
+        <item>Small Truck</item>
+        <item>Open Truck</item>
+
+    </array>
+    <array name="paymentmode">
+        <item>Cash</item>
+        <item>Banking</item>
+
+
+    </array>
+
+</resources>

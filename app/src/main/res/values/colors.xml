@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f7f5f5</color>
+    <color name="colorPrimaryDark">#5aed3e00</color>
+    <color name="colorAccent">#000000</color>
+    <color name="primersec">#33c0d0</color>
+    <color name="colorAccent_light">#50FF4081</color>
+    <color name="black">#000000</color>
+    <color name="blackdark">#bd1f1f20</color>
+    <color name="blacklight">#c8000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="toolbar">#f9f9f9</color>
+    <color name="background">#FAFAFA</color>
+    <color name="statusbar">#E0E0E0</color>
+    <color name="lightgrey">#e4dede</color>
+    <color name="grey">#f2efed</color>
+    <color name="primary">#EE6230</color>
+    <color name="darkprimery">#c65702</color>
+    <color name="primary_dark">#B23E22</color>
+    <color name="green">#27b222</color>
+    <color name="md_light_blue_400">#29B6FC</color>
+    <color name="md_light_blue_500">#03A9F4</color>
+    <color name="md_light_blue_600">#039BE5</color>
+    <color name="md_light_blue_700">#0288D1</color>
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+</resources>

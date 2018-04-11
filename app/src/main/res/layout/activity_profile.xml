@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.youlorryintracity.RideHistory">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+
+        android:layout_height="50dp">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/noo_data"
+        android:layout_below="@+id/toolbar"
+        android:src="@drawable/sorry"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

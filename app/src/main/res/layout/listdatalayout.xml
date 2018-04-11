@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+     android:id="@+id/cardlayout"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/staus_image"
+            android:layout_width="100dp"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/ic_delivery_truck2"
+                    android:layout_height="30dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                     android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:text="Fri,Sep 29, 09:30 PM"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:gravity="center|left"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="20dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/distance"
+                            android:layout_width="wrap_content"
+                            android:textSize="14sp"
+                            android:paddingLeft="10dp"
+                             android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/duration"
+                            android:layout_width="wrap_content"
+                            android:textSize="14sp"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/black"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vnumber"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="20dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/Rs"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="@color/black"
+                        android:text="30"
+                        android:id="@+id/amount"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="PickUp :"
+                        android:textSize="14sp"
+                        android:textColor="#2f972f"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/pickup"
+                        android:textSize="12sp"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Drop :"
+                        android:textSize="14sp"
+                        android:textColor="#f8ec0909"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/drop"
+                        android:layout_width="match_parent"
+                        android:textSize="12sp"
+                        android:paddingLeft="20dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/drivername"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+
+                        android:textColor="@color/green"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:alpha=".40"
+                    android:background="#b4b3b3"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

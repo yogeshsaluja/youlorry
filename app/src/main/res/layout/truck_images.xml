@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="92dp"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+                android:layout_width="40dp"
+                android:layout_height="11dp"
+                android:id="@+id/progress_bar"
+                android:layout_marginTop="3dp"
+                custom:amount="3"
+                custom:startColor="@color/md_light_blue_700"
+                custom:endColor="@color/md_light_blue_400"
+                custom:layout_constraintLeft_toLeftOf="@+id/textView"
+                custom:layout_constraintBottom_toBottomOf="@+id/imageView"
+                android:layout_marginBottom="4dp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:text="10min"
+                android:id="@+id/time"
+
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/left_line"
+
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:src="@drawable/ic_horizontalline"
+                     android:layout_height="wrap_content" />
+
+<!--
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                     app:civ_border_color="#000000"
+                    android:background="#c42a2a"
+
+                    app:civ_border_width="2dp"
+                      app:civ_shadow_color="#8BC34A"/>
+-->
+                <ImageView
+                    android:id="@+id/image"
+                    android:padding="5dp"
+
+                     android:layout_width="55dp"
+                     android:background="@drawable/circleswhite"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_height="55dp" />
+                <ImageView
+
+                    android:id="@+id/right_line"
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:src="@drawable/ic_horizontalline"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:text="sedan"
+            android:id="@+id/name"
+             android:textSize="14sp"
+                android:textStyle="bold"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="TRUCK"
+
+              android:visibility="visible"
+                android:textSize="12sp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/pprice"
+                android:gravity="center|top"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

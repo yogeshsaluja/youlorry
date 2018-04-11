@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.youlorryintracity.BookingActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/donelayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:src="@drawable/doneagain"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#96cc29"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Your Booking is Confirmed "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            android:text="You can track your booking in your orders"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Track Now"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:textColor="@color/white"
+                android:id="@+id/track_tv"
+                android:layout_marginBottom="100dp"
+
+                android:background="#96cc29"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Back to Home!"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/back"
+                android:background="#96cc29"
+                android:gravity="center"
+                android:layout_height="67dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:background="@color/md_light_blue_400"
+    android:orientation="vertical"
+        android:visibility="visible"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+         android:orientation="vertical"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Calculated Amount"
+            android:background="@color/md_light_blue_400"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="24sp"
+
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Rs"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:background="@color/md_light_blue_400"
+                android:gravity="center"
+                android:text="4000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="32sp"
+
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+android:gravity="bottom|center"
+android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/ic_location_city_black_24dp"
+                android:layout_height="120dp" />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_shippingtruck"
+                android:layout_height="60dp" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_skyline"
+                android:layout_height="120dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+              android:background="@drawable/corners"
+             android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:orientation="vertical"
+                                    android:layout_height="60dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Pick up"
+                                            android:drawableLeft="@drawable/ic_rec"
+                                            android:gravity="center|left"
+                                            android:paddingLeft="20dp"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:id="@+id/tv_pickup"
+                                            android:layout_width="wrap_content"
+                                            android:text="Gurgaon"
+                                            android:textColor="#000"
+                                             android:textSize="16sp"
+                                            android:gravity="center|left"
+                                            android:paddingLeft="20dp"
+                                            android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                 <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center|left"
+                                    android:orientation="vertical"
+                                    android:layout_height="60dp">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:text="Drop Point"
+                                            android:gravity="center|left"
+                                            android:drawableLeft="@drawable/ic_dotimg"
+                                            android:paddingLeft="20dp"
+                                            android:layout_height="wrap_content" />
+                                        <TextView
+                                            android:id="@+id/tv_drop"
+                                            android:layout_width="wrap_content"
+                                            android:text="Gurgaon"
+                                            android:textColor="#000"
+                                             android:textSize="16sp"
+                                            android:gravity="center|left"
+                                            android:paddingLeft="20dp"
+                                            android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                                android:background="#000"
+                               android:alpha=".30"
+                            android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center|left"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Estimate Time"
+                                android:gravity="center|left"
+                                android:paddingLeft="20dp"
+                                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/tv_time_name"
+                                android:layout_width="wrap_content"
+                                android:text="Gurgaon"
+                                android:textColor="#000"
+                                 android:textSize="18sp"
+                                android:gravity="center|left"
+                                android:paddingLeft="20dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="#000"
+                            android:alpha=".30"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="vertical"
+                            android:layout_height="60dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Entimate Distance"
+                                android:gravity="center|left"
+                                android:drawableLeft="@drawable/ic_directions_black_24dp"
+
+                                android:paddingLeft="20dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/tv_distance"
+                                android:text="9728824163"
+                                android:textColor="#000"
+
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:gravity="center|left"
+                                android:paddingLeft="20dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                         <View
+                            android:layout_width="match_parent"
+                            android:background="#000"
+                            android:alpha=".30"
+                            android:layout_height="1dp"/>
+                        <TextView
+    android:layout_width="match_parent"
+    android:background="#ef851c"
+    android:id="@+id/btnbooking"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="30dp"
+    android:text="Book Now"
+    android:gravity="center"
+                            android:layout_marginBottom="10dp"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    android:textColor="#fff"
+    android:layout_height="40dp" />
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+        </LinearLayout>
