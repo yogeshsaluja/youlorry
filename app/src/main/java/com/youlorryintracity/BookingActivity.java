@@ -93,6 +93,11 @@ public class BookingActivity extends AppCompatActivity implements View.OnClickLi
         dist=  bundle.getString("dist");
         type=  bundle.getString("type");
        PickUp.setText(pick);
+\\\\\\\\
+
+
+
+
        Drop.setText(drop);
 
        Distance.setText(dist);
